@@ -21,16 +21,26 @@ This project is a **Telegram bot automation** that:
 - **Python**: asyncio, requests, json, mysql-connector  
 - **Telegram Bot API** (`python-telegram-bot`)  
 - **MySQL**: Data storage & change tracking  
-- **DEXTools API**: Data source  
+- **DEXTools API**: Data source
+
+---
+
+## ⚙️ Setup Instructions  
+
+### 1️⃣ Clone the repository  
+```bash
+git clone https://github.com/ankitmishra42/TelegramBotAutomation.git
+cd TelegramBotAutomation
 
 
-###2️⃣ Install dependencies
+### 2️⃣ Install dependencies
+```bash
 pip install requests mysql-connector-python python-telegram-bot
 
-###3️⃣ Configure environment variables
+### 3️⃣ Configure environment variables
 
-Update your bot credentials and DB settings inside the script (TelegramBot.py):
-
+- Update your bot credentials and DB settings inside the script (TelegramBot.py):
+```python
 BOT_TOKEN = "your-telegram-bot-token"
 CHAT_ID = "your-chat-id"
 API_KEY = "your-dextools-api-key"
@@ -42,43 +52,32 @@ mydb = mysql.connector.connect(
   database="your-db-name"
 )
 
-###4️⃣ Setup MySQL Database
+### 4️⃣ Setup MySQL Database
 
 Run the following SQL commands:
-
+```SQL
 CREATE DATABASE systemicAltruism2;
-
 USE systemicAltruism2;
-
 CREATE TABLE newdata2 (
   id INT AUTO_INCREMENT PRIMARY KEY,
   data JSON,
   dateTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-
-###5️⃣ Run the bot
+### 5️⃣ Run the bot
+```bash
 python TelegramBot.py
 
 ---
 
-##📲 How It Works
+## 📲 How It Works
 
-Script fetches data from DEXTools API every 10 seconds.
-Inserts the new data into MySQL (newdata2 table).
-Checks if there are new records in the last 12 seconds.
-If yes, sends a Telegram alert with the new data.
+- Script fetches data from DEXTools API every 10 seconds.
+- Inserts the new data into MySQL (newdata2 table).
+- Checks if there are new records in the last 12 seconds.
+- If yes, sends a Telegram alert with the new data.
 
 ---
 
-##📌 Example Alert
-New Data Detected: {'id': 101, 'data': {...}, 'dateTime': '2025-09-03 15:45:10'}
----
-
-## ⚙️ Setup Instructions  
-
-### 1️⃣ Clone the repository  
-```bash
-git clone https://github.com/ankitmishra42/TelegramBotAutomation.git
-cd TelegramBotAutomation
-
+## 📌 Example Alert
+- New Data Detected: {'id': 101, 'data': {...}, 'dateTime': '2025-09-03 15:45:10'}
