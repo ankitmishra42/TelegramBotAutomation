@@ -34,7 +34,6 @@ cd TelegramBotAutomation
 
 
 ### 2️⃣ Install dependencies
-```bash
 pip install requests mysql-connector-python python-telegram-bot
 
 ### 3️⃣ Configure environment variables
