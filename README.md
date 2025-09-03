@@ -32,6 +32,7 @@ This project is a **Telegram bot automation** that:
 git clone https://github.com/ankitmishra42/TelegramBotAutomation.git
 cd TelegramBotAutomation
 ```bash
+exit
 
 ###2️⃣ Install dependencies
 ```bash
