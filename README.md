@@ -1,4 +1,4 @@
-# 🚀 Telegram Bot for API Monitoring & Database Alerts  
+# 🚀 Telegram Bot for API data Monitoring, stores in MySQL, and sends real-time alerts
 
 This project is a **Telegram bot automation** that:  
 - Fetches token data from the **DEXTools API**.  
