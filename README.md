@@ -28,21 +28,17 @@ This project is a **Telegram bot automation** that:
 ## ⚙️ Setup Instructions  
 
 ### 1️⃣ Clone the repository  
-```bash
+```
 git clone https://github.com/ankitmishra42/TelegramBotAutomation.git
 cd TelegramBotAutomation
-```bash
-exit
 
 ###2️⃣ Install dependencies
-```bash
 pip install requests mysql-connector-python python-telegram-bot
-bash```
 
 ###3️⃣ Configure environment variables
 
 Update your bot credentials and DB settings inside the script (TelegramBot.py):
-```python
+
 BOT_TOKEN = "your-telegram-bot-token"
 CHAT_ID = "your-chat-id"
 API_KEY = "your-dextools-api-key"
@@ -53,7 +49,6 @@ mydb = mysql.connector.connect(
   password="your-db-password",
   database="your-db-name"
 )
-python```
 
 ###4️⃣ Setup MySQL Database
 
@@ -86,12 +81,3 @@ If yes, sends a Telegram alert with the new data.
 
 ##📌 Example Alert
 New Data Detected: {'id': 101, 'data': {...}, 'dateTime': '2025-09-03 15:45:10'}
-
----
-
-##🚧 Future Improvements
-
-Add Docker support for easy deployment.
-Add logging for debugging.
-Implement error handling & retries for API calls.
-Extend to multiple APIs & multiple bot channels.
