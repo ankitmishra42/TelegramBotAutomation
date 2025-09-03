@@ -28,7 +28,6 @@ This project is a **Telegram bot automation** that:
 ## ⚙️ Setup Instructions  
 
 ### 1️⃣ Clone the repository  
-```
 git clone https://github.com/ankitmishra42/TelegramBotAutomation.git
 cd TelegramBotAutomation
 
