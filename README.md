@@ -31,12 +31,12 @@ This project is a **Telegram bot automation** that:
 ```bash
 git clone https://github.com/ankitmishra42/TelegramBotAutomation.git
 cd TelegramBotAutomation
-
+bash```
 
 ###2️⃣ Install dependencies
 ```bash
 pip install requests mysql-connector-python python-telegram-bot
-
+bash```
 
 ###3️⃣ Configure environment variables
 
@@ -52,9 +52,9 @@ mydb = mysql.connector.connect(
   password="your-db-password",
   database="your-db-name"
 )
+python```
 
-
-4️⃣ Setup MySQL Database
+###4️⃣ Setup MySQL Database
 
 Run the following SQL commands:
 
@@ -69,7 +69,7 @@ CREATE TABLE newdata2 (
 );
 
 
-5️⃣ Run the bot
+###5️⃣ Run the bot
 python TelegramBot.py
 
 ---
@@ -77,11 +77,8 @@ python TelegramBot.py
 ##📲 How It Works
 
 Script fetches data from DEXTools API every 10 seconds.
-
 Inserts the new data into MySQL (newdata2 table).
-
 Checks if there are new records in the last 12 seconds.
-
 If yes, sends a Telegram alert with the new data.
 
 ---
@@ -94,9 +91,6 @@ New Data Detected: {'id': 101, 'data': {...}, 'dateTime': '2025-09-03 15:45:10'}
 ##🚧 Future Improvements
 
 Add Docker support for easy deployment.
-
 Add logging for debugging.
-
 Implement error handling & retries for API calls.
-
 Extend to multiple APIs & multiple bot channels.
