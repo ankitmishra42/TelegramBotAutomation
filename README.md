@@ -23,13 +23,6 @@ This project is a **Telegram bot automation** that:
 - **MySQL**: Data storage & change tracking  
 - **DEXTools API**: Data source  
 
----
-
-## ⚙️ Setup Instructions  
-
-### 1️⃣ Clone the repository  
-git clone https://github.com/ankitmishra42/TelegramBotAutomation.git
-cd TelegramBotAutomation
 
 ###2️⃣ Install dependencies
 pip install requests mysql-connector-python python-telegram-bot
@@ -80,3 +73,12 @@ If yes, sends a Telegram alert with the new data.
 
 ##📌 Example Alert
 New Data Detected: {'id': 101, 'data': {...}, 'dateTime': '2025-09-03 15:45:10'}
+---
+
+## ⚙️ Setup Instructions  
+
+### 1️⃣ Clone the repository  
+```bash
+git clone https://github.com/ankitmishra42/TelegramBotAutomation.git
+cd TelegramBotAutomation
+
