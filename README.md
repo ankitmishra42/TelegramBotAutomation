@@ -31,10 +31,12 @@ This project is a **Telegram bot automation** that:
 ```bash
 git clone https://github.com/ankitmishra42/TelegramBotAutomation.git
 cd TelegramBotAutomation
-
+```
 
 ### 2️⃣ Install dependencies
+```bash
 pip install requests mysql-connector-python python-telegram-bot
+```
 
 ### 3️⃣ Configure environment variables
 
@@ -50,6 +52,7 @@ mydb = mysql.connector.connect(
   password="your-db-password",
   database="your-db-name"
 )
+```
 
 ### 4️⃣ Setup MySQL Database
 
@@ -62,10 +65,12 @@ CREATE TABLE newdata2 (
   data JSON,
   dateTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
 
 ### 5️⃣ Run the bot
 ```bash
 python TelegramBot.py
+```
 
 ---
 
@@ -79,4 +84,4 @@ python TelegramBot.py
 ---
 
 ## 📌 Example Alert
-- New Data Detected: {'id': 101, 'data': {...}, 'dateTime': '2025-09-03 15:45:10'}
+ New Data Detected: {'id': 101, 'data': {...}, 'dateTime': '2025-09-03 15:45:10'}
